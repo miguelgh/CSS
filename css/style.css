@@ -31,7 +31,7 @@ div h3, div h4 {
 }
 /* el * además aplica las propiedades solo si los elementos no han sido definido por otros selectores, no importa si este selector se coloque al final, solo se va a aplicar las propiedades si el elemento no ha sido definido anteriormente*/
 /*por eso aplica la propiedad font a todos los elementos, pero no la propiedad color que ya ha sido definido anteriormente*/
-.color{
+.color {
    /* border: 5px rgb(255, 0, 0) dotted*/
    border-style: solid;
    border-color: blue;
@@ -39,6 +39,11 @@ div h3, div h4 {
    /*redondea las esquinas del borde*/
    border-width: 5px;
    /*engrosa el borde*/
-   
-
+}
+#fondo {
+    background-color: rgba(255, 0, 0, 0.3);
+    /*rgba permite trabajar con el canal alfa, el cuarto número va de 0 a 1 con decimales intermedios para regular su valor. 0 es transparencia total y 1 es un sólido*/
+    opacity: 0.7;
+    /*opacity vuelve transparente todo el objeto, ya sea texto o fondo, va de 0 a 1*/
+    background-image: url('img/vinilo01.png');
 }
