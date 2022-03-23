@@ -27,6 +27,18 @@ div h3, div h4 {
 * {/*con * se indica que seleccione todos los elementos de html y le aplique las siguientes propiedades*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: blue;
+    color:rgb(0, 0, 255);
 }
 /* el * además aplica las propiedades solo si los elementos no han sido definido por otros selectores, no importa si este selector se coloque al final, solo se va a aplicar las propiedades si el elemento no ha sido definido anteriormente*/
 /*por eso aplica la propiedad font a todos los elementos, pero no la propiedad color que ya ha sido definido anteriormente*/
+.color{
+   /* border: 5px rgb(255, 0, 0) dotted*/
+   border-style: solid;
+   border-color: blue;
+   border-radius: 10px;
+   /*redondea las esquinas del borde*/
+   border-width: 5px;
+   /*engrosa el borde*/
+   
+
+}
