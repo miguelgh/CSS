@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pruebas CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Pruebas Css</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Como funciona</h2>
+            <ol type="1">
+                <li>A partir de selectores</li>
+                <li>Se pueden seleccionar 1 o más elementos a traves de clases</li>
+                <li>Modifica las propiedades de un elemento</li>
+            </ol>
+        </article>
+        <hr>    
+        <article>
+            <h2 id="titulo">Titulo de prueba</h2><!--se le asigna un id para poder identificar el elemento único y darle propiedades-->
+            <p class="texto">texto de prueba Lorem ipsum dolor sit amet.</p>
+            <!--las clases permiten darle propiedadse a varios elementos a la vez-->
+            <p class="texto">parrafo 2 Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="texto especial">Lorem ipsum dolor sit amet consectetur.</p>
+            <!--esta clase contiene 2 clases distintas "texto" y "especial", según quien esté primero y quien despues se va a quedar con la última propiedad que se escribió, en este caso lo que esté escrito en la clase "especial"-->
+            <div>
+                <h3>Subtitulo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h4>Otro subtitulo</h4>
+            </div>
+        </article>
+    </section>
+    <hr>
+    <footer>
+        <h4>Pie de pagina</h4>
+    </footer>
+</body>
+</html>
