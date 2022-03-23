@@ -45,5 +45,59 @@ div h3, div h4 {
     /*rgba permite trabajar con el canal alfa, el cuarto número va de 0 a 1 con decimales intermedios para regular su valor. 0 es transparencia total y 1 es un sólido*/
     opacity: 0.7;
     /*opacity vuelve transparente todo el objeto, ya sea texto o fondo, va de 0 a 1*/
-    background-image: url('img/vinilo01.png');
+    background-image: url('../img/vinilo01.png');
+    background-size: cover;
+    /*
+    auto: completa automaticamente el fondo
+    cover: utiliza el 100% proporcional del fondo para dimensionar el tamaño de la imagen, este también se adapta al ancho del contenedor.
+    contain: contiene la imagen dentro de las dimensiones del elemento, sería en el alto como base
+    */
+    background-size: 100px 100px;
+    /*el primer valor es el ancho, el segundo el alto*/
+    background-repeat: repeat-y;
+    /*repite la imagen solo en horizontal (x), con y en vertical*/
+    background-position: right top;
+    /*define la posición del fondo, right, left, top y bottom, también se le pueden definir valores numéricos. */
+}
+.margen p{
+    color: bisque;
+    font-size: 22px;
+}
+.margen {
+    background-color: chocolate;
+    margin: 10px 15px 20px 30px;
+    /* se agrega espacio por fuera del elemento
+    1)superior 2)derecho 3)inferior, 4)izquierdo
+    si son 2 atributos, sería 1)superior e inferior, 2) derecha e izquierda
+    */
+    padding: 10px 20px 30px 35px;
+    /*agrega espacio internamente en el objeto*/
+    border: solid 4px rgb(30, 133, 17);
+    width: 50px;
+    overflow:hidden;
+    /*overflow hidden oculta el contenido que se salga del espacio establecido de la caja
+    overflow sroll muestra unas barras para navegar el contenido que está dentro de ellas
+    */
+    outline: solid 2px red;
+    /*es una linea que va despues del borde y antes del margen*/
+}
+.letras{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-align: justify;
+    /*centra el texto en relación al contenedor*/
+    text-decoration: overline dotted;
+    /*subrayados del texto*/
+    text-shadow: 5px 5px 5px rgb(247, 67, 67);
+    /*text-shadow: toma como 
+    primer parámetro el movimiento horizontal hacia la derecha, 
+    el segundo es hacia abajo, 
+    tercer valor es el blur*/
+}
+.tipografias p, .tipografias a {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    /*tipografía cargada desde google fonts.
+    el link de carga se encuentra en el head del index
+    */
 }
