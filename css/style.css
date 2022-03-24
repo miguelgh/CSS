@@ -24,10 +24,10 @@ div h3{/*cualquier h3 que esté dentro de un div*/
 div h3, div h4 {
     color: black;
 }
+
 * {/*con * se indica que seleccione todos los elementos de html y le aplique las siguientes propiedades*/
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blue;
-    color:rgb(0, 0, 255);
+    color: rgb(0, 0, 0);
 }
 /* el * además aplica las propiedades solo si los elementos no han sido definido por otros selectores, no importa si este selector se coloque al final, solo se va a aplicar las propiedades si el elemento no ha sido definido anteriormente*/
 /*por eso aplica la propiedad font a todos los elementos, pero no la propiedad color que ya ha sido definido anteriormente*/
@@ -100,4 +100,68 @@ div h3, div h4 {
     /*tipografía cargada desde google fonts.
     el link de carga se encuentra en el head del index
     */
+}
+a {
+    color: black;
+}
+
+/*el orden de las propeidades de a es importante*/
+a:link { 
+    color: black;
+}
+/*con link quiere decir que el link no ha sido visitado*/
+a:visited {
+    color: brown;
+}
+/*visited se ejecuta cuando el link fue visitado*/
+a:hover {
+    color: chartreuse;
+}
+/*con hover se cambia la propiedad cuando el puntero está sobre el objeto a*/
+
+a:active {
+    color: red;
+}
+/*se ejecuta cuando está presionado*/
+ul {
+    color: black;
+    background-color: coral;
+    list-style-type: none;
+    /*al colocar none se eliminan los marcadores de las listas pero no se elimina el padding que se crea, para eso hay que crear un padding que resetee esos valores*/
+    padding-left: 0px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /*con border collapse, se elimina la separación entre bloques que se crea en la tabla, es como un amrgen entre celda y celda*/
+}
+th,td {
+    border: solid 1px rgb(0, 79, 143);
+    padding: 10px;
+}
+th {
+    background-color: chartreuse;
+    color: rgb(0, 0, 85);
+    text-align: left;
+}
+tr:nth-child(odd) {
+    /*permite seleccionar cierto tipo de bloque, en este caso puede ser even(impar) o odd (par)*/
+    background-color: rgb(170, 255, 234);
+}
+/*es importante el orden porque si no el hover no funcionaría en las listas pares por odd*/
+tr:hover {
+    background-color: rgb(114, 206, 126);
+    cursor:pointer;
+    /*modifica el puntero del mouse por la mano*/
+}
+.PruebaSpan {
+    background-color: darkgreen;
+    display: block;
+    /*con display block el objeto utiliza el 100% del ancho de la pantalla por defecto*/
+    display: inline;
+    /*display inline, los elementos utilizan es espacio que ocupa su contenido*/
+    /*display: none , hace desaparecer el objeto*/
+    visibility: hidden;
+    /*visibility: hidden lo que hace es ocultar el objeto, a diferencia de display none que lo desaparece, el hidden sigue ocupando el espacio, es como darle una transparencia*/
+
 }
