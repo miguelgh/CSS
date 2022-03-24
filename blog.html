@@ -15,15 +15,15 @@
     <title>Blog</title>
 </head>
 <body>
-    <header>
+    <header id="titulo">
         <h1>NOMBRE DEL BLOG</h1>
     </header>
     <!--se utiliza para poder agrupar links o logos, se pueden utilizar todos los header que sean necesarios, pero no se puede utilizar un header dentro de otro header y no se puede utilizar un header dentro de la etiqueta de footer -->
-    <section>
+    <section class="container">
         <!--se utiliza para definir las secciones del sitio-->
         <article class="post"><!--se utiliza para definir contenido independiente, como un post de un blog, texto, imagenes, etc.-->
             <h2>1. Titulo del post</h2>
-            <p>descripción del post</p>
+            <p>Descripción del post</p>
             <img src="img/item1.png" alt="imagen del Post">
             <p>Texto del articulo Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </article>
@@ -41,8 +41,10 @@
         </article>
     </section>
     <footer>
-        <a href="#titulo">Ir al titulo</a><br>
-        <a href="mailto:miguelgh16@gmail.com">Envíame un email</a>
+        <section>
+            <a href="#titulo">Ir al titulo</a>
+            <a href="mailto:miguelgh16@gmail.com">Envíame un email</a>
+        </section>
         <p>Copyright 2022</p>
     </footer><!--se suele utilizar para el pié de página de nuestro sitio-->
 </body>
