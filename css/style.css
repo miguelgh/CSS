@@ -163,5 +163,67 @@ tr:hover {
     /*display: none , hace desaparecer el objeto*/
     visibility: hidden;
     /*visibility: hidden lo que hace es ocultar el objeto, a diferencia de display none que lo desaparece, el hidden sigue ocupando el espacio, es como darle una transparencia*/
+    visibility: visible;
+    display: block;
+    max-width: 600px;
+}
+#posicion {
+    background-color: darkorchid;
+    position:relative;
+    /*static es por defecto que vienen los elementos de html*/
+    /*con relative el objeto se superpone a otros elementos*/
+    left: 20px;
+    /*left indica cuanto se tiene que mover la posición del objeto seleccionado*/
+    top: 10px;
+}
+.extra1 {
+    background-color: burlywood;
+}
+#posicion2 {
+    background-color: rgb(50, 204, 96);
+    position:fixed;
+    /*fixed ubica el elemento con relación al navegador, en este caso se iría arriba de todo a 10px del top del navegador y 20px left, subiendo una capa y superponiendose a otros elementos, si se hace scroll, el objeto va a seguir anclado al navegador y se va a mover con el*/
+    left: 20px;
+    /*left indica cuanto se tiene que mover la posición del objeto seleccionado*/
+    top: 10px;
+}
+#posicion3 {
+    background-color: rgb(204, 201, 50);
+    position:absolute;
+    /*absolute ubica el elemento con relación al navegador pero no sigue al scroll, solo lo posiciona al comienzo del navegador y si se hace scroll va a quedar ahí*/
+    left: 20px;
+    /*left indica cuanto se tiene que mover la posición del objeto seleccionado*/
+    top: 10px;
+}
+.left {
+    background-color: rgb(182, 204, 60);
+    float: left;
+    width: 100px;
+}
+.right {
+    background-color: darkorange;
+    float: right;
+}
+.contenedor {
+    width: 100%;
+    height: 130px;
 
+}
+.inlineBlock {
+    background-color: dimgray;
+    display: inline-block;
+    /*display inline-block permite agregar la propiedad de width y height, a diferencia de solo inline que no lo permite, esto se utiliza mucho para los menu de navegación horizontal*/
+    width: 200px;
+    height: 30px;
+}
+.centrado {
+    background-color: darkkhaki;
+    /*Para centrar un objeto, este siempre tiene que tener un width*/
+    width: 200px;
+    /*en margin 0, para que no se centre vertical y luego automático para el horizontal*/
+    margin: 0 auto;
+    /*text aling se utiliza para centrar el texto que contiene el objeto*/
+    text-align: center;
+    /*height: 50px; para centrar el texto en vertical, al objeto no hay que darle una medida en height si no que hay que hacerlo con el padding para que se centre automáticamente en vertical*/
+    padding: 50px 0px;
 }
