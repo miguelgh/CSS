@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background-color: rgb(192, 192, 192);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: .5rem;
+}
+header{
+    width: calc(100% - 20px);
+    /*el cálculo es el 100% del ancho menos 20px, que representan el padding izquierdo más el derecho*/
+    height: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    /*con line-height se alinea el texto verticalmente, se da como valor la altura del div que lo contiene*/
+    padding: 10px;
+}
+nav{
+    height: 40px;
+    background-color: rgb(10, 3, 73);
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    line-height: 40px;
+    margin: 0 1rem;
+    color: white;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    /*saca el subrayado del link que viene por defecto*/
+}
+.clearfix{
+    clear: both;
+    /*both, hace que la caja sobre la que se aplica baje hasta que su borde superior esté por debajo del borde inferior de cualquier elemento flotado a la izquierda o a la derecha.*/
+}
+.content{
+    width: calc(70% - 20px);
+    float: left;
+    background-color: green;
+    min-height: 320px;
+    padding: 10px;
+}
+article{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+article:first-child{
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+/*con el pseudo elemento de first-Child, uno puede asignarle propiedades especiales a una clase, estas se las van a dar al primer elemento que aparesca*/
+aside{
+    width: calc(30% - 20px);
+    float: left;
+    background-color: orange;
+    min-height: 320px;
+    padding: 10px;
+}
+footer{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}

@@ -1,0 +1,82 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex-container{
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    /*el display flex ya es responsivo*/
+    flex-direction: row;
+    /*flex-direction es el estado por defecto y ordena los objetos horizontalmente por filas*/
+    flex-direction: column;
+    /*si se utiliza column ordena los objetos verticalmente por columnas*/
+    /*flex-direction: column-reverse;
+    Ordena los objetos de forma inversa
+    */
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex-container2{
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*es el valor por defecto y lo que hacer es tratar de acomodar todos los objetos dentro de la fila centrados y alineados, omitiendo su tamaño original (120x120px)*/
+    flex-wrap: wrap;
+    /*con la propiedad wrap los objetos mantendran su tamaño original y se ordenaran en filas y si un objeto ya no entra pasa a otra linea respetando el orden y la distribución*/
+}
+
+.flex-container3{
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap row;
+    /*combina las dos propiedades direction y wrap, así se escribe en una sola linea*/
+    justify-content: space-around;
+    /*permite ajustar el espaciado entre los objetos*/
+    align-items: center;
+    /*alinea los objetos verticalmente*/
+}
+.flex-container4{
+    background-color: rgb(209, 253, 174);
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    width: 90%;
+    height: 500px;
+    flex-flow: wrap row;
+    justify-content:center;
+    align-content:center;
+
+}
+.caja{
+    border: 1px solid rgb(65, 65, 65);
+    background-color: antiquewhite;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
+.c1{
+    background-color: rgb(235, 145, 10);
+    order: 3;
+    /*todo objeto que tenga las propiedades de display flex, se puede ordenar con order y asignarle un número de posición*/
+    flex-grow: 5;
+    /*se le da más espacio en relación al número a mayor número más espacio*/
+}
+.c2{
+    background-color: rgb(1, 126, 22);
+    order: 2;
+    flex-grow: 2;
+}
+.c3{
+    background-color: rgb(0, 42, 228);
+    order 1;
+    flex-grow: 1;
+}
